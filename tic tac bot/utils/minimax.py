@@ -1,4 +1,4 @@
-from calcscore import *
+from utils.calcscore import *
 import math
 
 def finish(board):
@@ -51,9 +51,8 @@ def bestMove(board):
             bestVal = moveVal
             bestMove = i
 
-    print("Best Move is to Position {}".format(bestMove))
-    print("Value = {}".format(bestMove))
+    return bestMove
 
-bestMove(["X", "", "O", "", "X", "", "", "", ""])
+# bestMove(["X", "", "O", "", "X", "", "", "", ""])
 
 
