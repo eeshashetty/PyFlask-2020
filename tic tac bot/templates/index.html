@@ -28,6 +28,8 @@
     <script>
         let grid = {{ grid|safe }}
         function update(i) {
+            if(grid[i] != "")
+                return
             grid[i] = "X"
             let gs = grid.toString()
             const url = '/play?grid='+gs
